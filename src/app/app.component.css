@@ -1,0 +1,14 @@
+nav{
+    background: rgb(26, 46, 160);
+}
+#srcBtn{
+    color: white;
+}
+.customEdit{
+    color: rgb(233, 216, 196);
+}
+
+.customEdit:hover 
+{
+ color: white;  
+}
