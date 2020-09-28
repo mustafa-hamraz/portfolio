@@ -1,0 +1,87 @@
+.first-section {
+    width: 100%;
+    background-color: #ffffff; /* For browsers that do not support gradients */
+    /*background-image: linear-gradient(#edf0f5, #ffffff);*/
+    position: relative;
+    text-align: center;
+    margin-top: 3rem;
+}
+.background_img {
+    opacity: 0.1;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0 3rem 0 3rem;
+}
+.centered-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(209, 78, 2);
+    font-size: 3vw;
+    font-weight: bold;
+    text-shadow: 3px 3px 4px #a19d9d52;
+}
+
+
+
+
+.second-section{
+    background-color: #4267B2; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#ffffff, #edf0f5 );
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.info_card_style{
+    width: 15rem;
+}
+
+@media only screen and (max-width: 600px){
+    .first-section{
+        width: 100%;
+        height: 20rem;
+        background-image: linear-gradient(#edf0f5,#f3e6d4,  #ffffff );
+        animation-name: background_animation;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+    .background_img {
+        height: 0%;
+        width: 0%;
+    }
+    .centered-text{
+        font-size: 5vw;
+        top: 50%;
+        left: 30%;
+        transform: translate(-20%, -20%);
+        animation-name: text_animation;
+        animation-duration: 4s;
+        transition: ease-in-out;
+        animation-iteration-count: infinite;
+        color: rgb(209, 78, 2);
+       
+
+    }
+
+    .info_card_style{
+        width: 80%;
+    }  
+}
+
+@keyframes text_animation {   
+    25%  {color: rgb(156, 56, 9);}
+    50%  {color: rgb(172, 142, 11);}
+    75%  {color: rgb(230, 89, 7);}
+}
+
+@keyframes background_animation {  
+    20%  {background-image: linear-gradient(#edf0f5,#f5ede2e7,  #ffffff );} 
+    40%  {background-image: linear-gradient(#edf0f5,#f3e6d4b2, #ffffff);}
+    60%  {background-image: linear-gradient(#edf0f5,#f3e6d4e1,  #ffffff);}
+    80%  {background-image: linear-gradient(#edf0f5,#f3e6d4fa,  #ffffff );}
+}

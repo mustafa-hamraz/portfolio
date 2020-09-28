@@ -1,14 +1,11 @@
-<header>
-  <nav class="navbar justify-content-center">
-    <ul class="nav">
-      <li class="nav-item" id="srcBtn">
-        <a class="nav-link customEdit selectedLink" routerLink="/about">About </a>
-      </li>
-      <li class="nav-item" id="srcBtn">
-        <a class="nav-link customEdit selectedLink" routerLink="/projects">Projects</a>
-      </li>
-    </ul>    
+<section>
+  <nav class="navbar fixed-top navbar-light">
+    <a id="logo" routerLink="/home">  <img id="logo-img" src="assets/img/logo.png"> </a>
+    <div>
+      <a class="navbar_link" routerLink="/projects">Projects</a>
+      <a class="navbar_link" routerLink="/about">About </a>
+    </div>
   </nav>
-</header>
+</section>
 
 <router-outlet></router-outlet>
